@@ -1,0 +1,2078 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(img/background-bw.jpg) no-repeat center center;
+  background-size: cover;
+  -webkit-user-select: none;
+	font-family: 'Aleo', serif;
+}
+
+#table {
+  width: 178vh;
+  height: 98vh;
+  min-width: 1402px;
+  min-height: 772px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+#menu-right > div {
+  text-align: right;
+}
+
+#menu-right {
+  position: relative;
+}
+
+#menuImg {
+  background: url(img/got.svg) no-repeat center center;
+  background-size: 100%;
+  width: 35%;
+  height: 8%;
+  float: right;
+  margin-bottom: 5%;
+}
+
+.qwe {
+  padding: 2px 0;
+}
+
+#menu-right ul {
+  width: 50%;
+  clear: both;
+  list-style-type: none;
+  text-align: right;
+  position: absolute;
+  top: 1vh;
+  right: 40%
+}
+
+#menu-right li {
+  padding: 2% 10% 2% 2%;
+  background: #555;
+  text-shadow: -1px 1px #555;
+}
+
+#menu-right li:hover {
+  background: #595959;
+  color: #bfbfbf;
+  text-shadow: -1px 1px #333;
+}
+
+#menu-right li:active {
+  background: #555;
+  color:  black;
+  text-shadow: -1px 1px #555
+}
+
+#game-settings {
+  position: relative;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-top: 35%;
+  margin-bottom: -30%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid #555;
+  padding: 7% 5% 3% 5%;
+}
+
+#game-settings-close {
+  left: 84%;
+  top: 4%;
+  width: 7%;
+  height: 3%;
+  text-align: center;
+  position: absolute;
+  font-size: 19px;
+  color: #161616;
+}
+
+#game-settings-close:hover {
+  color: #eee;
+}
+
+#game-settings-close:active {
+  color: #161616;
+}
+
+#settings-spans {
+  margin-bottom: 3%;
+}
+
+#players-name {
+  margin-left: 20%;
+}
+
+.settings-label {
+  display: inline-block;
+  width: 28%;
+}
+
+.change-color {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 2%;
+  margin-left: 5%;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+.transfer-color-yellow { margin: 8% 0 8% 0; width: 90%; height: 3px; background-color: yellow }
+.transfer-color-limegreen { margin: 8% 0 8% 0; width: 90%; height: 3px; background-color: limegreen }
+.transfer-color-dodgerblue { margin: 8% 0 8% 0; width: 90%; height: 3px; background-color: dodgerblue }
+.transfer-color-red { margin: 8% 0 8% 0; width: 90%; height: 3px; background-color: red }
+.transfer-color-orange { margin: 8% 0 8% 0; width: 90%; height: 3px; background-color: #ff9933 }
+.transfer-color-lightblue { margin: 8% 0 8% 0; width: 90%; height: 3px; background-color: lightskyblue }
+.transfer-color-purple { margin: 8% 0 8% 0; width: 90%; height: 3px; background-color: purple }
+.transfer-color-pink { margin: 8% 0 8% 0; width: 90%; height: 3px; background-color: #ff99cc }
+
+.transfer-deeds-color-1-3 { font-size: 16px; color: #996633 }
+.transfer-deeds-color-6-8-9 { font-size: 16px; color: #b3e6ff }
+.transfer-deeds-color-11-13-14 { font-size: 16px; color: #ff99cc }
+.transfer-deeds-color-16-18-19 { font-size: 16px; color: #ff9933 }
+.transfer-deeds-color-21-23-24 { font-size: 16px; color: #ff3300 }
+.transfer-deeds-color-26-27-29 { font-size: 16px; color: #ffff00 }
+.transfer-deeds-color-31-32-34 { font-size: 16px; color: #66ff66 }
+.transfer-deeds-color-37-39 { font-size: 16px; color: #4da6ff }
+.transfer-deeds-color-communalServices { font-size: 16px; color: #ded8c1 }
+.transfer-deeds-color-rWStation { font-size: 16px; color: #ccc }
+
+.player-color-yellow { text-align: center; background-color: yellow; }
+.player-color-limegreen { text-align: center; background-color: limegreen; }
+.player-color-dodgerblue { text-align: center; background-color: dodgerblue; }
+.player-color-red { text-align: center; background-color: red; }
+.player-color-orange { text-align: center; background-color: #ff9933; }
+.player-color-lightblue { text-align: center; background-color: lightskyblue; }
+.player-color-purple { text-align: center; background-color: purple; }
+.player-color-pink { text-align: center; background-color: #ff99cc; }
+
+.enter-player-name {
+  display: inline-block;
+  width: 55%;
+  background-color: #ccc;
+  outline: none;
+}
+
+#game-settings button[type=submit] {
+  text-align: center;
+  clear: both;
+  width: 100%;
+  height: 30px;
+  margin: 10px auto;
+  margin-top: 19px;
+  line-height: 100%;
+  background: #555;
+  outline: none;
+  border: 2px solid #666;
+  text-shadow: -1px 1px #555;
+}
+
+#game-settings button[type=submit]:hover {
+  background: #595959;
+  color: #bfbfbf;
+  text-shadow: -1px 1px #333;
+}
+
+#game-settings button[type=submit]:active {
+  background: #555;
+  color:  black;
+  text-shadow: -1px 1px #555
+}
+
+#transfer-block {
+  position: relative;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-top: 35%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid #555;
+  padding: 5% 5% 3% 5%;
+}
+
+#transfer-close {
+  left: 84%;
+  top: 5%;
+  width: 7%;
+  height: 3%;
+  text-align: center;
+  position: absolute;
+  font-size: 19px;
+  color: #161616;
+}
+
+#transfer-close:hover {
+  color: #eee;
+}
+
+#transfer-close:active {
+  color: #161616;
+}
+
+#transfer-block h2 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+#transfer-block button[type=submit] {
+  text-align: center;
+  clear: both;
+  width: 100%;
+  height: 30px;
+  margin: 10px auto;
+  margin-top: 19px;
+  line-height: 100%;
+  background: #555;
+  outline: none;
+  border: 2px solid #666;
+  text-shadow: -1px 1px #555;
+}
+
+#transfer-block button[type=submit]:hover {
+  background: #595959;
+  color: #bfbfbf;
+  text-shadow: -1px 1px #333;
+}
+
+#transfer-block button[type=submit]:active {
+  background: #555;
+  color:  black;
+  text-shadow: -1px 1px #555
+}
+
+.transfer-contain {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.transfer-contain label {
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.transfer-contain-right label {
+  margin-left: 12%;
+}
+
+.enter-money {
+  width: 65%;
+  margin: 0 5% 5% 0;
+  float: left;
+  text-align: center;
+  font-size: 11px;
+}
+
+.enter-money-right {
+  margin-left: 10%;
+}
+
+.enter-money small {
+  float: left;
+}
+
+#valari {
+  width: 42%;
+  height: 24%;
+  position: absolute;
+  top: 62%;
+  left: 54%;
+  transform: rotate(-45deg);
+  background: url(img/valari-big.jpg) no-repeat right center /contain;
+  display: block;
+}
+
+#valari-action {
+  width: 42%;
+  height: 24%;
+  position: absolute;
+  top: 67%;
+  left: 54%;
+  transform: rotate(-5deg);
+  background: black;
+  color: #aaa;
+  font-size: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 8%;
+  display: block;
+}
+
+#winter-is-coming {
+  width: 42%;
+  height: 24%;
+  position: absolute;
+  top: 14%;
+  left: 4%;
+  transform: rotate(-45deg);
+  background: url(img/winter-coming-big.png) no-repeat right center /contain;
+  display: block;
+}
+
+#winter-action {
+  width: 42%;
+  height: 24%;
+  position: absolute;
+  top: 19%;
+  left: 4%;
+  transform: rotate(-5deg);
+  background: white;
+  color: #111;
+  font-size: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 8%;
+  display: block;
+}
+
+.buy-deeds {
+  width: 34%;
+  height: 18%;
+  position: absolute;
+  background-color: rgba(153, 153, 153, 0.2);
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 1.25;
+  display: block;
+  top: 99%;
+  left: -56%;
+}
+
+.buy-deeds p {
+  margin: 5%;
+}
+
+#buy {
+  font-size: 21px;
+  width: 50%;
+  height: 40%;
+  text-shadow: 1px 1px #666;
+  float: left;
+}
+
+#buy:hover { color: #ddd; text-shadow: 1px 1px #555; }
+#buy:active { color: black; text-shadow: 1px 1px #666; }
+
+#no-buy {
+  font-size: 21px;
+  width: 50%;
+  height: 40%;
+  text-shadow: 1px 1px #666;
+  float: left;
+}
+
+#no-buy:hover { color: #eee; text-shadow: 1px 1px #555; }
+#no-buy:active { color: black; text-shadow: 1px 1px #666; }
+
+#map {
+  width: 55.056%;
+  height: 100%;
+}
+
+.menu {
+  box-sizing: border-box;
+  padding: 1% 1%;
+  background: rgba(90, 90, 90, 0.2);
+  width: 22.472%;
+  height: 100%;
+}
+
+#menu-left {
+  position: relative;
+  padding-top: 1.5%;
+  padding-bottom: 15%;
+}
+
+#dices-block {
+  width: 100%;
+  height: 15%;
+  margin-bottom: 6%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dice1 { background: url(img/dice1.png) no-repeat right center /contain; }
+.dice2 { background: url(img/dice2.png) no-repeat right center /contain; }
+.dice3 { background: url(img/dice3.png) no-repeat right center /contain; }
+.dice4 { background: url(img/dice4.png) no-repeat right center /contain; }
+.dice5 { background: url(img/dice5.png) no-repeat right center /contain; }
+.dice6 { background: url(img/dice6.png) no-repeat right center /contain; }
+
+.dice {
+  box-sizing: border-box;
+  width: 14.5%;
+  height: 50%;
+  float: left;
+}
+
+.players-box{
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 3px solid #555;
+  width: 100%;
+  height: 15%;
+  margin-top: 3%;
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+#hotels-and-houses {
+  position: absolute;
+  left: 3.5%;
+  top: 84.5%;
+  width: 6%;
+  height: 10%;
+}
+
+#hotels-and-houses p {
+  color: #bbb;
+  font-size: 22px;
+}
+
+#hotels-and-houses span {
+  color: black;
+}
+
+
+.active-player {
+  border: 2px solid #eee;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.player-box-yellow { width: 7%; height: 100%; float: left; background-color: yellow; border-radius: 2px; text-align: center }
+.player-box-limegreen { width: 7%; height: 100%; float: left; background-color: limegreen; border-radius: 2px; text-align: center }
+.player-box-dodgerblue { width: 7%; height: 100%; float: left; background-color: dodgerblue; border-radius: 2px; text-align: center }
+.player-box-red { width: 7%; height: 100%; float: left; background-color: red; border-radius: 2px; text-align: center }
+.player-box-orange { width: 7%; height: 100%; float: left; background-color: #ff9933; border-radius: 2px; text-align: center }
+.player-box-lightblue { width: 7%; height: 100%; float: left; background-color: lightskyblue; border-radius: 2px; text-align: center }
+.player-box-purple { width: 7%; height: 100%; float: left; background-color: purple; border-radius: 2px; text-align: center }
+.player-box-pink { width: 7%; height: 100%; float: left; background-color: #ff99cc; border-radius: 2px; text-align: center }
+
+.player-stats {
+  width: 59%;
+  height: 100%;
+  float: left;
+}
+
+.player-name {
+  width: 100%;
+  height: 50%;
+  margin-top: 5%;
+  margin-bottom: -5%;
+  padding-left: 3%;
+  overflow: hidden;
+  font-size: 22px;
+  text-align: center;
+  color: #e4e2c0;
+}
+
+.text-eclipse {
+  position: relative;
+  background: linear-gradient(to right, rgb(228, 226, 192) 77%, rgba(228, 226, 192, 0) 96%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.player-money {
+  width: 100%;
+  height: 50%;
+  font-size: 30px;
+  text-align: center;
+  color: #bbddbd;
+}
+
+.player-button {
+  box-sizing: border-box;
+  width: 16%;
+  height: 100%;
+  float: left;
+  padding-top: 5%;
+  border-radius: 2px;
+  font-size: 19px;
+  text-align: center;
+  text-shadow: -1px 1px #aaa;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.winner {
+  box-sizing: border-box;
+  color: lawngreen;
+  transform: rotate(-18deg);
+  font-size: 36px;
+  padding-top: 16%;
+}
+
+.bankrupt-style {
+  color: darkred;
+}
+
+.bankrupt {
+  width: 32%;
+  padding-top: 8%;
+  float: right;
+  }
+
+.bankrupt:hover {
+  color: #ddd;
+  text-shadow: -1px 1px #444;
+  background-color: #8c8c8c;
+}
+
+.bankrupt:active {
+  color: black;
+  text-shadow: -1px 1px #aaa;
+  background-color: #7f7f7f;
+}
+
+#bankrupt-0 {
+  top: 16.8%;
+  left: 15%;
+}
+
+#bankrupt-1 {
+  top: 28.2%;
+  left: 15%;
+}
+
+#bankrupt-2 {
+  top: 39.6%;
+  left: 15%;
+}
+
+#bankrupt-3 {
+  top: 51%;
+  left: 15%;
+}
+
+#bankrupt-4 {
+  top: 62.3%;
+  left: 15%;
+}
+
+#bankrupt-5 {
+  top: 73.7%;
+  left: 15%;
+}
+
+.player-button:hover {
+  color: #ddd;
+  text-shadow: -1px 1px #444;
+  background-color: rgba(255, 255, 255, 0.26);
+}
+
+.player-button:active {
+  color: black;
+  text-shadow: -1px 1px #aaa;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.end {
+  float: right;
+}
+
+.pay-50 {
+  float: right;
+}
+
+.cell {
+  /*border: 1px inset #b3b3b3;*/
+  box-sizing: border-box;
+  position: relative;
+}
+
+#top-of-the-map {
+  width: 100%;
+  height: 14%;
+  box-sizing: border-box;
+}
+
+#cell-20 {
+  width: 14%;
+  height: 100%;
+  float: left;
+}
+
+.top-line {
+  width: 8%;
+  height: 100%;
+  float: left;
+}
+
+#cell-30 {
+  width: 14%;
+  height: 100%;
+  float: left;
+}
+
+.left-line {
+  width: 11.111111%;
+  height: 100%;
+  float: left;
+}
+
+#mid-of-the-map {
+  width: 100%;
+  height: 72%;
+  box-sizing: border-box;
+}
+
+.right-line{
+  width: 11.111111%;
+  height: 100%;
+  float: left;
+}
+
+#left-of-the-map {
+  float: left;
+  width: 72%;
+  height: 19.444444%;
+  box-sizing: border-box;
+  margin-left: 14%;
+  margin-bottom: -19.444444%;
+}
+
+#central-square {
+  float: left;
+  margin-left: 14%;
+  width: 72%;
+  height: 100%;
+  position: relative;
+}
+
+#right-of-the-map {
+  float: right;
+  width: 72%;
+  height: 19.444444%;
+  box-sizing: border-box;
+  margin: -72% 14% -19.444444%;
+}
+
+#cell-10 {
+  width: 14%;
+  height: 100%;
+  float: left;
+}
+
+#cell-0 {
+  width: 14%;
+  height: 100%;
+  float: right;
+}
+
+#bottom-of-the-map {
+  width: 100%;
+  height: 14%;
+  box-sizing: border-box;
+}
+
+.cell-1-3-color {
+  width: 100%;
+  height: 20%;
+  background-color: #604020;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cell-6-8-9-color {
+  width: 100%;
+  height: 20%;
+  background-color: #b3e6ff;
+  border-right: 1px solid #666;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+}
+
+.cell-11-13-14-color {
+  width: 100%;
+  height: 20%;
+  background-color: #ff99cc;
+  border-right: 1px solid #666;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+}
+
+.cell-16-18-19-color {
+  width: 100%;
+  height: 20%;
+  background-color: #ff9933;
+  border-left: 1px solid #666;
+  font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cell-21-23-24-color {
+  width: 100%;
+  height: 20%;
+  background-color: #ff3300;
+  border-right: 1px solid #666;
+  font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cell-26-27-29-color {
+  width: 100%;
+  height: 20%;
+  background-color: #ffff00;
+  border-right: 1px solid #666;
+  font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cell-31-32-34-color {
+  width: 100%;
+  height: 20%;
+  background-color: #66ff66;
+  border-right: 1px solid #666;
+  font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cell-37-39-color {
+  width: 100%;
+  height: 20%;
+  background-color: #4da6ff;
+  font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cell-valari {
+  width: 100%;
+  height: 100%;
+  background: url(img/valari.jpg) center center /cover;
+  box-sizing: border-box;
+  padding-top: 153%;
+}
+
+.cell-winter-is-coming {
+  width: 100%;
+  height: 100%;
+  background: url(img/winter-coming.jpg) center center /cover;
+  box-sizing: border-box;
+  padding-top: 153%;
+}
+
+.cell-boltons {
+  width: 100%;
+  height: 100%;
+  background: url(img/boltons.jpg) center center /cover;
+  box-sizing: border-box;
+  padding-top: 15%;
+  border-left: 1px solid #7f7f7f;
+}
+
+.cell-boltons-cost {
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  color: #880000;
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: -10%;
+}
+
+.cell-5-top {
+  width: 100%;
+  height: 100%;
+  background: url(img/baratheon.jpg) center center /cover;
+  box-sizing: border-box;
+  padding-top: 153%;
+}
+
+.cell-35-top {
+  width: 100%;
+  height: 100%;
+  background: url(img/lannister.jpg) center center /cover;
+  box-sizing: border-box;
+  padding-top: 153%;
+}
+
+.cell-15-top {
+  width: 100%;
+  height: 100%;
+  background: url(img/tyrell.jpg) center center /cover;
+  box-sizing: border-box;
+  padding-top: 153%;
+}
+
+.cell-25-top {
+  width: 100%;
+  height: 100%;
+  background: url(img/targaryen.jpg) center center /cover;
+  box-sizing: border-box;
+  padding-top: 153%;
+}
+
+.cell-houses-price {
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0;
+}
+
+.cell-master-of-coin {
+  width: 100%;
+  height: 100%;
+  background: url(img/master-of-coin.jpg) center center /cover;
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-12-28-text {
+  margin-top: 100%;
+  margin-bottom: -13%;
+  color: white;
+  text-shadow: -1px 1px 2px #000;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cell-1 {
+  width: 100%;
+  height: 80%;
+  background: url(img/crasters-keep.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-3 {
+  width: 100%;
+  height: 80%;
+  background: url(img/fest-of-the-first-man.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-6 {
+  width: 100%;
+  height: 80%;
+  background: url(img/nightfort.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-8 {
+  width: 100%;
+  height: 80%;
+  background: url(img/moles-town.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-9 {
+  width: 100%;
+  height: 80%;
+  background: url(img/inn-at-the-crossroad.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-11 {
+  width: 100%;
+  height: 80%;
+  background: url(img/dothrak.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-13 {
+  width: 100%;
+  height: 80%;
+  background: url(img/qarth.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-14 {
+  width: 100%;
+  height: 80%;
+  background: url(img/pentos.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-16 {
+  width: 100%;
+  height: 80%;
+  background: url(img/eurie.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-18 {
+  width: 100%;
+  height: 80%;
+  background: url(img/dragonstone.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-19 {
+  width: 100%;
+  height: 80%;
+  background: url(img/moat-cailin.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-21 {
+  width: 100%;
+  height: 80%;
+  background: url(img/harrenhall.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-23 {
+  width: 100%;
+  height: 80%;
+  background: url(img/dreadfort.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-24 {
+  width: 100%;
+  height: 80%;
+  background: url(img/the-twins.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-26 {
+  width: 100%;
+  height: 80%;
+  background: url(img/astapor.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-27 {
+  width: 100%;
+  height: 80%;
+  background: url(img/yunkai.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-29 {
+  width: 100%;
+  height: 80%;
+  background: url(img/meereen.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-31 {
+  width: 100%;
+  height: 80%;
+  background: url(img/castle-black.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-32 {
+  width: 100%;
+  height: 80%;
+  background: url(img/pyke.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-34 {
+  width: 100%;
+  height: 80%;
+  background: url(img/winterfell.jpg) center center /cover;
+  filter: grayscale(100%);
+
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-37 {
+  width: 100%;
+  height: 80%;
+  background: url(img/braavos.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.cell-39 {
+  width: 100%;
+  height: 80%;
+  background: url(img/kings-landing.jpg) center center /cover;
+  filter: grayscale(100%);
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+#cell-1-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 53%;
+  top: 63%;
+  width: 45%;
+  height: 35%;
+  background: url(img/crasters-keep-big.png) no-repeat left center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+}
+
+#cell-1-info {
+  float: right;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-1-3-info-color {
+  background-color: #604020;
+  text-transform: uppercase;
+  color: #f7f7f7;
+  font-size: 16px;
+  height: 10%;
+  text-align: center;
+  padding-top: 5%;
+  text-shadow: -1px 1px #444;
+}
+
+#cell-3-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 53%;
+  top: 63%;
+  width: 45%;
+  height: 35%;
+  background: url(img/the-fist-big.png) no-repeat right center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+}
+
+#cell-3-info {
+  float: left;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-3-info-color {
+  font-size: 11px;
+}
+
+#cell-6-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 5%;
+  top: 63%;
+  width: 45%;
+  height: 35%;
+  background: url(img/nightfort-big.png) no-repeat left center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-6-info {
+  float: right;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-6-8-9-info-color {
+  background-color: #b3e6ff;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 16px;
+  height: 10%;
+  text-align: center;
+  padding-top: 5%;
+  text-shadow: -1px 1px #999;
+}
+
+#cell-8-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 1%;
+  top: 63%;
+  width: 45%;
+  height: 35%;
+  background: url(img/moles-town-big.png) no-repeat right center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-8-info {
+  float: left;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-9-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 1%;
+  top: 63%;
+  width: 45%;
+  height: 35%;
+  background: url(img/the-inn-big.png) no-repeat right center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-9-info {
+  float: left;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-9-info-color {
+  color: black;
+  font-size: 10px;
+}
+
+#cell-11-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 1%;
+  top: 63%;
+  width: 45%;
+  height: 35%;
+  background: url(img/vaes-big.png) no-repeat right center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-11-info {
+  float: left;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-13-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 1%;
+  top: 43%;
+  width: 45%;
+  height: 35%;
+  background: url(img/qarth-big.png) no-repeat right center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-13-info {
+  float: left;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-14-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 1%;
+  top: 32%;
+  width: 45%;
+  height: 35%;
+  background: url(img/pentos-big.png) no-repeat right center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-14-info {
+  float: left;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-11-13-14-info-color {
+  background-color: #ff99cc;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 16px;
+  height: 10%;
+  text-align: center;
+  padding-top: 5%;
+  text-shadow: -1px 1px #999;
+}
+
+#cell-16-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 1%;
+  top: 10%;
+  width: 45%;
+  height: 35%;
+  background: url(img/eurie-big.png) no-repeat right center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-16-info {
+  float: left;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-18-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 1%;
+  top: 1%;
+  width: 45%;
+  height: 35%;
+  background: url(img/dragonstone-big.png) no-repeat right center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-18-info {
+  float: left;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-19-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 1%;
+  top: 1%;
+  width: 45%;
+  height: 35%;
+  background: url(img/moat-cailin-big.png) no-repeat right center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-19-info {
+  float: left;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-16-18-19-info-color {
+  background-color: #ff9933;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 16px;
+  height: 10%;
+  text-align: center;
+  padding-top: 5%;
+  text-shadow: -1px 1px #999;
+}
+
+#cell-21-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 1%;
+  top: 1%;
+  width: 45%;
+  height: 35%;
+  background: url(img/harren-hall-big.png) no-repeat right center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-21-info {
+  float: left;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-21-23-24-info-color {
+  background-color: #ff3300;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 16px;
+  height: 10%;
+  text-align: center;
+  padding-top: 5%;
+  text-shadow: -1px 1px #999;
+}
+
+#cell-23-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 1%;
+  top: 1%;
+  width: 45%;
+  height: 35%;
+  background: url(img/dreadfort-big.png) no-repeat left center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-23-info {
+  float: right;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-24-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 5%;
+  top: 1%;
+  width: 45%;
+  height: 35%;
+  background: url(img/the-twins-big.png) no-repeat left center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-24-info {
+  float: right;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-26-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 1%;
+  width: 45%;
+  height: 35%;
+  background: url(img/astapor-big.png) no-repeat right center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-26-info {
+  float: left;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-27-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 53%;
+  top: 1%;
+  width: 45%;
+  height: 35%;
+  background: url(img/yunkai-big.png) no-repeat right center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-27-info {
+  float: left;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-29-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 53%;
+  top: 1%;
+  width: 45%;
+  height: 35%;
+  background: url(img/meereen-big.png) no-repeat left center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-29-info {
+  float: right;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-26-27-29-info-color {
+  background-color: #ffff00;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 16px;
+  height: 10%;
+  text-align: center;
+  padding-top: 5%;
+  text-shadow: -1px 1px #ccc;
+}
+
+#cell-31-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 53%;
+  top: 1%;
+  width: 45%;
+  height: 35%;
+  background: url(img/castle-black-big.png) no-repeat left center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-31-info {
+  float: right;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-32-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 53%;
+  top: 1%;
+  width: 45%;
+  height: 35%;
+  background: url(img/pyke-big.png) no-repeat left center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-32-info {
+  float: right;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-34-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 53%;
+  top: 10%;
+  width: 45%;
+  height: 35%;
+  background: url(img/winterfell-big.png) no-repeat left center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-34-info {
+  float: right;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-31-32-34-info-color {
+  background-color: #66ff66;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 16px;
+  height: 10%;
+  text-align: center;
+  padding-top: 5%;
+  text-shadow: -1px 1px #ccc;
+}
+
+#cell-37-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 53%;
+  top: 43%;
+  width: 45%;
+  height: 35%;
+  background: url(img/braavos-big.png) no-repeat left center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-37-info {
+  float: right;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+#cell-39-info-full {
+  position: absolute;
+  z-index: 100;
+  left: 53%;
+  top: 63%;
+  width: 45%;
+  height: 35%;
+  background: url(img/kings-landing-big.png) no-repeat left center /contain;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+}
+
+#cell-39-info {
+  float: right;
+  width: 50.1%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.9);
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-37-39-info-color {
+  background-color: #4da6ff;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 16px;
+  height: 10%;
+  text-align: center;
+  padding-top: 5%;
+  text-shadow: -1px 1px #ccc;
+}
+
+#cell-5-info-full {
+  position: absolute;
+  z-index: 100;
+  width: 22.5%;
+  height: 35%;
+  top: 63%;
+  left: 38%;
+  background: rgba(200, 200, 200, 0.9);
+  text-align: center;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-5-info {
+  width: 100%;
+  height: 87.5%;
+}
+
+.cell-5-info-left {
+  float: left;
+  width: 55%;
+  height: 100%;
+  padding: 37% 3%;
+  line-height: 150%;
+  box-sizing: border-box;
+  text-align-last: justify;
+}
+
+.cell-5-img {
+  float: right;
+  width: 45%;
+  height: 100%;
+  background: url(img/baratheon-big.png) no-repeat center center /contain;
+}
+
+#cell-15-info-full {
+  position: absolute;
+  z-index: 100;
+  width: 22.5%;
+  height: 35%;
+  top: 20%;
+  left: 1%;
+  background: rgba(200, 200, 200, 0.9);
+  text-align: center;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-15-info {
+  width: 100%;
+  height: 87.5%;
+}
+
+.cell-15-info-left {
+  float: left;
+  width: 55%;
+  height: 100%;
+  padding: 37% 3%;
+  line-height: 150%;
+  box-sizing: border-box;
+  text-align-last: justify;
+}
+
+.cell-15-img {
+  float: right;
+  width: 45%;
+  height: 100%;
+  background: url(img/tyrell-big.png) no-repeat center center /contain;
+}
+
+#cell-25-info-full {
+  position: absolute;
+  z-index: 100;
+  width: 22.5%;
+  height: 35%;
+  top: 1%;
+  left: 38%;
+  background: rgba(200, 200, 200, 0.9);
+  text-align: center;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-25-info {
+  width: 100%;
+  height: 87.5%;
+}
+
+.cell-25-info-left {
+  float: left;
+  width: 55%;
+  height: 100%;
+  padding: 37% 3%;
+  line-height: 150%;
+  box-sizing: border-box;
+  text-align-last: justify;
+}
+
+.cell-25-img {
+  float: right;
+  width: 45%;
+  height: 100%;
+  background: url(img/targaryenn-big.png) no-repeat center center /contain;
+}
+
+#cell-35-info-full {
+  position: absolute;
+  z-index: 100;
+  width: 22.5%;
+  height: 35%;
+  top: 20%;
+  left: 75.5%;
+  background: rgba(200, 200, 200, 0.9);
+  text-align: center;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-35-info {
+  width: 100%;
+  height: 87.5%;
+}
+
+.cell-35-info-left {
+  float: left;
+  width: 55%;
+  height: 100%;
+  padding: 37% 3%;
+  line-height: 150%;
+  box-sizing: border-box;
+  text-align-last: justify;
+}
+
+.cell-35-img {
+  float: right;
+  width: 45%;
+  height: 100%;
+  background: url(img/lannister-big.png) no-repeat center center /contain;
+}
+
+#cell-12-info-full {
+  position: absolute;
+  z-index: 100;
+  width: 22.5%;
+  height: 35%;
+  top: 54%;
+  left: 1%;
+  background: rgba(200, 200, 200, 0.9);
+  text-align: center;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-12-info {
+  width: 100%;
+  height: 87.5%;
+}
+
+.cell-12-info-left {
+  float: left;
+  width: 55%;
+  height: 100%;
+  padding: 37% 3%;
+  line-height: 150%;
+  box-sizing: border-box;
+  text-align-last: justify;
+}
+
+.cell-12-img {
+  float: right;
+  width: 45%;
+  height: 100%;
+  background: url(img/master-of-coin-big.png) no-repeat center center /contain;
+}
+
+#cell-28-info-full {
+  position: absolute;
+  z-index: 100;
+  width: 22.5%;
+  height: 35%;
+  top: 1%;
+  left: 72%;
+  background: rgba(200, 200, 200, 0.9);
+  text-align: center;
+  border-radius: 3px;
+  border: 3px solid rgba(160, 160, 160, 1);
+  display: block;
+}
+
+.cell-28-info {
+  width: 100%;
+  height: 87.5%;
+}
+
+.cell-28-info-left {
+  float: left;
+  width: 55%;
+  height: 100%;
+  padding: 37% 3%;
+  line-height: 150%;
+  box-sizing: border-box;
+  text-align-last: justify;
+}
+
+.cell-28-img {
+  float: right;
+  width: 45%;
+  height: 100%;
+  background: url(img/master-of-coin-big.png) no-repeat center center /contain;
+}
+
+.cell-info-block {
+  width: 100%;
+  height: 52%;
+  padding: 2% 6% 6% 6%;
+  font-size: 14px;
+  text-align-last: justify;
+  box-sizing: border-box;
+  line-height: 145%;
+  color: #222;
+  }
+
+.cell-info-button {
+  width: 100%;
+  height: 11%;
+  font-size: 14px;
+  text-align-last: justify;
+  box-sizing: border-box;
+  padding: 4%;
+  background-color: rgba(77, 77, 77, .35);
+  text-shadow: -1px 1px #aaa;
+}
+
+.cell-info-button:hover {
+  background-color: rgba(77, 77, 77, .25);
+  color: white;
+  text-shadow: -1px 1px #666;
+}
+
+.cell-info-button:active {
+  background-color: rgba(77, 77, 77, .35);
+  color: black;
+  text-shadow: -1px 1px #aaa;
+}
+
+.cell-info-text {
+  margin: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.cell-text {
+  margin-top: 0;
+  height: 30%;
+  color: white;
+  text-shadow: -1px 1px 2px #000;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cell-8-text {
+  margin-top: -17%;
+  margin-bottom: -13%;
+  color: white;
+  text-shadow: -1px 1px 2px #000;
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cell-text-bottom {
+  margin-top: 66%;
+  color: white;
+  text-shadow: -1px 1px 2px #000;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#top-of-the-map {
+  transform: rotate(180deg);
+}
+
+#left-of-the-map {
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+#right-of-the-map {
+  transform: rotate(-90deg);
+  transform-origin: top right;
+}
+
+#cell-0 { background: url(img/start.jpg) center center /cover; }
+#cell-10 { background: url(img/jail.jpg) center center /cover; }
+#cell-20 { background: url(img/parking.jpg) center center /cover; }
+#cell-30 { background: url(img/to-jail.jpg) center center /cover; }
+
+.unit {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4vh;
+  height: 4vh;
+  border: 1px solid #222;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+.active-unit {
+  border: 3px solid #fff;
+  box-shadow: 0 0 5px 5px #000;
+}
+
+.unit-yellow { background: yellow; }
+.unit-limegreen { background: limegreen; }
+.unit-dodgerblue { background: dodgerblue; }
+.unit-red { background: red;}
+.unit-orange { background: #ff9933; }
+.unit-lightblue { background: lightskyblue; }
+.unit-purple { background: purple;}
+.unit-pink { background: #ff99cc;}
+
+.unit { top: 55%; }
+.unit + .unit { top: 48%; }
+.unit + .unit + .unit { top: 41%; }
+.unit + .unit + .unit + .unit { top: 34%; }
+.unit + .unit + .unit + .unit + .unit { top: 27%; }
+.unit + .unit + .unit + .unit + .unit + .unit { top: 20%; }
+
+.owner {
+  position: absolute;
+  left: 3.5%;
+  top: -40%;
+  border: 3.6vh solid transparent;
+}
+
+.owner-yellow { border-bottom: 1.6vh solid yellow; }
+.owner-limegreen { border-bottom: 1.6vh solid limegreen; }
+.owner-dodgerblue { border-bottom: 1.6vh solid dodgerblue; }
+.owner-red { border-bottom: 1.6vh solid red; }
+.owner-orange { border-bottom: 1.6vh solid #ff9933; }
+.owner-lightblue { border-bottom: 1.6vh solid lightskyblue; }
+.owner-purple { border-bottom: 1.6vh solid purple; }
+.owner-pink { border-bottom: 1.6vh solid #ff99cc; }
+
+@media (max-width: 1850px), (max-height: 960px){
+  body { font-size: 13px; }
+  #game-settings-close { font-size: 14px; }
+  .transfer-deeds-color-1-3 { font-size: 13px; }
+  .transfer-deeds-color-6-8-9 { font-size: 13px; }
+  .transfer-deeds-color-11-13-14 { font-size: 13px; }
+  .transfer-deeds-color-16-18-19 { font-size: 13px; }
+  .transfer-deeds-color-21-23-24 { font-size: 13px; }
+  .transfer-deeds-color-26-27-29 { font-size: 13px; }
+  .transfer-deeds-color-31-32-34 { font-size: 13px; }
+  .transfer-deeds-color-37-39 { font-size: 13px; }
+  .transfer-deeds-color-communalServices { font-size: 13px; }
+  .transfer-deeds-color-rWStation { font-size: 13px; }
+  #transfer-close { font-size: 14px; }
+  #transfer-block h2 { font-size: 17px; }
+  .transfer-contain label { font-size: 14px; }
+  #valari-action { font-size: 18px; }
+  #winter-action { font-size: 18px; }
+  #buy { font-size: 18px; }
+  #no-buy { font-size: 18px; }
+  #hotels-and-houses p  { font-size: 19px; }
+  .player-name { font-size: 19px; }
+  .player-money { font-size: 24px; }
+  .player-button { font-size: 16px; }
+  .winner { font-size: 29px; }
+  .cell-1-3-color { font-size: 15px; }
+  .cell-6-8-9-color { font-size: 15px; }
+  .cell-11-13-14-color { font-size: 15px; }
+  .cell-16-18-19-color { font-size: 15px; }
+  .cell-21-23-24-color { font-size: 15px; }
+  .cell-26-27-29-color { font-size: 15px; }
+  .cell-31-32-34-color { font-size: 15px; }
+  .cell-37-39-color { font-size: 15px; }
+  .cell-boltons-cost { font-size: 8px; }
+  .cell-houses-price { font-size: 10px; }
+  .cell-houses-price { font-size: 10px; }
+  .cell-12-28-text { font-size: 10px; }
+  .cell-1-3-info-color { font-size: 13px; }
+  .cell-6-8-9-info-color { font-size: 13px; }
+  .cell-11-13-14-info-color { font-size: 13px; }
+  .cell-16-18-19-info-color { font-size: 13px; }
+  .cell-21-23-24-info-color { font-size: 13px; }
+  .cell-26-27-29-info-color { font-size: 13px; }
+  .cell-31-32-34-info-color { font-size: 13px; }
+  .cell-37-39-info-color { font-size: 13px; }
+  .cell-info-block { font-size: 12px; }
+  .cell-info-button { font-size: 12px; }
+  .cell-info-text { font-size: 13px; }
+  .cell-text { font-size: 9px; }
+  .cell-8-text { font-size: 9px; }
+  .cell-text-bottom { font-size: 13px; }
+}
